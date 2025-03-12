@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    
+    <h2>Amazing images</h2>
+    <div>
+    <ul>
+        <li>p1</li>
+        <li>iceland</li>
+        <li>owl</li>
+        <li>paris</li>
+    </ul>
+</div>
+</body>
+<script>
+    document.getElementById('owl').onclick = function(){
+        alert("owl clicked")
+    }
+
+    document.getElementById('owl').addEventListener('click', function(){
+        alert("owl clicked again")
+    })
+</script>
+</html>
